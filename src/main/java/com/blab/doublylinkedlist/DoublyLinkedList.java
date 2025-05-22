@@ -158,6 +158,20 @@ public class DoublyLinkedList <E extends Comparable> {
         return false;
     }
 
+    // method to display list in reverse order
+    public void reverse()
+    {
+        // creating temp variable to point to tail
+        Node temp = tail;
+        // traversing the temp to upto first node
+        while(temp.previous!=null)
+        {
+            System.out.print(temp.data+"-->");
+            temp = temp.previous;
+        }
+        System.out.println(temp.data);
+    }
+
 
     // overriden toString() to display doubly linked list
     public String toString()
@@ -177,5 +191,6 @@ public class DoublyLinkedList <E extends Comparable> {
         System.out.println(temp.data);
         return "";
     }
+
 }
 

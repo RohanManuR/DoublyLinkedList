@@ -24,7 +24,9 @@ public class Main {
         System.out.println(doublyLinkedList.size());
         // updating the oldData by newData
         doublyLinkedList.set(600,55);
-        // diplaying the updated list
+        // displaying the updated list
         System.out.println(doublyLinkedList);
+        // displaying the data's in reverse order
+        doublyLinkedList.reverse();
     }
 }
