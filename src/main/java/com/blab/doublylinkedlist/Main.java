@@ -11,9 +11,13 @@ public class Main {
         doublyLinkedList.add(50);
         doublyLinkedList.add(600);
         doublyLinkedList.add(5);
-
+        // adding the datas based on index
+        doublyLinkedList.add(6,25);
+        doublyLinkedList.add(0,35);
         // display nodes
         System.out.println(doublyLinkedList);
+        // displaying the size of list
+        System.out.println(doublyLinkedList.size());
 
     }
 }
