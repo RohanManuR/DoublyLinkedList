@@ -18,6 +18,8 @@ public class Main {
         System.out.println(doublyLinkedList.delete(700));
         // display nodes
         System.out.println(doublyLinkedList);
+        // searching the data in list
+        System.out.println(doublyLinkedList.search(35));
         // displaying the size of list
         System.out.println(doublyLinkedList.size());
 

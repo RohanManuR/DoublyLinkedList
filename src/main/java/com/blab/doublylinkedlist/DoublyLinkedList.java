@@ -125,6 +125,21 @@ public class DoublyLinkedList <E extends Comparable> {
         return false;
     }
 
+    // method to search data in list
+    public boolean search(E data)
+    {
+        // creating temp variable to point to head
+        Node temp = head;
+        // traversing the temp to till last node
+        while (temp.next!=null)
+        {
+            if(temp.data.equals(data))
+                return true;
+            temp = temp.next;
+        }
+        return false;
+    }
+
     // overriden toString() to display doubly linked list
     public String toString()
     {
