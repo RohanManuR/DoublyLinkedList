@@ -28,5 +28,9 @@ public class Main {
         System.out.println(doublyLinkedList);
         // displaying the data's in reverse order
         doublyLinkedList.reverse();
+        // sorting the list elements
+        doublyLinkedList.sort();
+        // displaying the elements in sorted order
+        System.out.println(doublyLinkedList);
     }
 }

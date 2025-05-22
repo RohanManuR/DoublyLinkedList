@@ -172,6 +172,29 @@ public class DoublyLinkedList <E extends Comparable> {
         System.out.println(temp.data);
     }
 
+    // method to sort the list elements
+    public <E extends Comparable> int sort()
+    {
+        // outer loop to traverse the list
+        for(int i=0;i<size();i++)
+        {
+            // creating temp variable to point to head
+            Node temp = head;
+            // traversing the temp to till last node
+            while(temp.next!=null)
+            {
+                // swapping the data based the comparable logic
+                if(temp.data.compareTo(temp.next.data)>0){
+                    Comparable swap =  temp.data;
+                    temp.data = temp.next.data;
+                    temp.next.data = swap;
+                }
+                temp = temp.next;
+            }
+        }
+        return 0;
+    }
+
 
     // overriden toString() to display doubly linked list
     public String toString()
