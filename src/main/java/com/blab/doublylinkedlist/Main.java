@@ -22,6 +22,9 @@ public class Main {
         System.out.println(doublyLinkedList.search(35));
         // displaying the size of list
         System.out.println(doublyLinkedList.size());
-
+        // updating the oldData by newData
+        doublyLinkedList.set(600,55);
+        // diplaying the updated list
+        System.out.println(doublyLinkedList);
     }
 }

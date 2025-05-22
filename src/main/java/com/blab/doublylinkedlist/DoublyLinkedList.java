@@ -140,6 +140,25 @@ public class DoublyLinkedList <E extends Comparable> {
         return false;
     }
 
+    // method to update(replace) the oldData by newData
+    public boolean set(E oldData,E newData)
+    {
+        // creating temp variable to point to head
+        Node temp = head;
+        // traversing the temp to till last node
+        while(temp.next!=null)
+        {
+            // checking the data and replacing
+            if(temp.data.equals(oldData)) {
+                temp.data = newData;
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
+
+
     // overriden toString() to display doubly linked list
     public String toString()
     {
