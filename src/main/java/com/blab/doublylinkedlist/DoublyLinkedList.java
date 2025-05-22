@@ -91,6 +91,39 @@ public class DoublyLinkedList <E extends Comparable> {
         return size;
     }
 
+    // method to delete the node based on data
+    public boolean delete(E data)
+    {
+        // checking list is empty or not
+        if(head==null){
+            System.out.println("List is empty,....");
+            return false;
+        }
+        // checking that need to remove first element
+        if(data.equals(head.data)){
+            head = head.next;
+            head.previous = null;
+            return true;
+        }
+        //checking that need to remove last element
+        if(data.equals(tail.data)){
+            tail = tail.previous;
+            tail.next = null;
+            return true;
+        }
+        // creating temp variable to point to head
+        Node temp = head;
+        // traversing the temp to till last node
+        while(temp!=null) {
+            if(temp.data.equals(data)) {
+                temp.previous.next = temp.next;
+                temp.next.previous = temp.previous;
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
+    }
 
     // overriden toString() to display doubly linked list
     public String toString()

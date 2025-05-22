@@ -14,6 +14,8 @@ public class Main {
         // adding the datas based on index
         doublyLinkedList.add(6,25);
         doublyLinkedList.add(0,35);
+        // deleting the node based on data
+        System.out.println(doublyLinkedList.delete(700));
         // display nodes
         System.out.println(doublyLinkedList);
         // displaying the size of list
